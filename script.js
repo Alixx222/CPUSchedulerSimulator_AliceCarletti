@@ -6,6 +6,12 @@ let at = []; //ARRAY TEMPO DI ARRIVO
 let bt = []; //ARRAY TEMPO DI BURST
 let rbt = []; //ARRAY TEMPO DI BURST RIMANENTE
 let pr = []; //ARRAY PRIORITÀ
+function inputProcess() {
+  p.push(document.getElementById("pid").value);
+  at.push(parseInt(document.getElementById("arrival").value));
+  bt.push(parseInt(document.getElementById("burst").value));
+  pr.push(parseInt(document.getElementById("priority").value));
+}
 
 /* FUNZIONE RESET
  La tabella dei processi viene sostituita con una tabella vuota
@@ -43,6 +49,7 @@ function start(){
    tableEl.replaceChild(newTBodyEl, oldTBodyEl);
    document.getElementById("output").style.display = "block";
 }
+
 
 
 
