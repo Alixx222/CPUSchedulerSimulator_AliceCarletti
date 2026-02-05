@@ -13,6 +13,14 @@
 <div class="container">
    <h2>CPU scheduler simulator</h2>
    <div>
+  <input type="text" id="pid" placeholder="Process ID">
+  <input type="number" id="arrival" placeholder="Arrival Time">
+  <input type="number" id="burst" placeholder="Burst Time">
+  <input type="number" id="priority" placeholder="Priority">
+  <button onclick="inputProcess()">Input</button>
+</div>
+
+   <div>
        <div>
           <button id="idStart" onclick="start()"> Start </button>
           <button id="idReset" onclick="reset()"> Reset </button>
@@ -46,4 +54,5 @@
 <script src="script.js"></script>
 </body>
 </html>
+
 
